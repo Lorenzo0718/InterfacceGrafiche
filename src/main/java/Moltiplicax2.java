@@ -85,7 +85,7 @@ public class Moltiplicax2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Integer numero = new Integer(jTextField1.getText()) * 2;
+        Integer numero = 2 * Integer.parseInt(jTextField1.getText());
         jTextField2.setText(numero.toString());
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -118,6 +118,7 @@ public class Moltiplicax2 extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new Moltiplicax2().setVisible(true);
             }
